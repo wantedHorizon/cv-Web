@@ -24,19 +24,19 @@
     width: 60px;
     height: 60px;
     padding: 1.2rem;
+    background-color: transparent;
     
-    /* background: rgba(2,132,208,0.1); */
-    
-    background: transparent;
   
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .bg-hamburger {
-    background: --ham;
-  }
+ #hamburger.bg-red{
+  background: var( --bg-hamburger);
+}
+
+  
 
   
   
