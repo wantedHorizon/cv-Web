@@ -175,4 +175,44 @@ a {
 
 }
 
+
+/* Projects */
+
+
+#project {
+    font-size: 1.4rem;
+}
+
+.column-1__img {
+    width: 50%;
+    margin: 10% auto;
+   
+    
+}
+
+.column-1__img:hover {
+
+}
  
+
+.card {
+    width: 25vw;
+    height: 25vw;
+    margin: auto;
+    border: 1px solid black;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 2px 3px black;
+
+}
+.card:hover{
+    transform: scale(1.2) rotate(5deg);
+
+
+}
+
+
+
+.row,.project__row {
+    height: 100vh !important;
+
+}
