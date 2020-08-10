@@ -7,7 +7,7 @@
   
   .menu-wrap .toggler {
     position: absolute;
-    top: 0;
+    top: 1vh;
     left: 0;
     z-index: 2;
     cursor: pointer;
@@ -18,7 +18,7 @@
   
   .menu-wrap .hamburger {
     position: absolute;
-    top: 0;
+    top: 1vh;
     left: 0;
     z-index: 1;
     width: 60px;
@@ -118,8 +118,8 @@
   .menu-wrap .menu > div {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 300vw;
+    height: 300vw;
     display: flex;
     flex: none;
     align-items: center;

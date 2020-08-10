@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+  <!-- hamburger menu -->
   <div class="menu-wrap ">
     <input type="checkbox" class="toggler ">
     <div id="hamburger" class="hamburger ">
@@ -25,7 +27,7 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -35,17 +37,25 @@
 
 
 
-
+  <!-- toolbar -->
   <header class="hero">
     <div id="navbar" class="navbar top">
       <h1 class="logo">
         <span class="text-primary"><i class="fas fa-book-open"></i> Wanted</span>Horizon
       </h1>
-      <nav>
+      <nav id="nav1">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#cases">Projects</a></li>
+          <li><a href="#projects">
+            Projects</a> <i class="fas fa-angle-down"></i>
+            <ul>
+              <li><a href="#">Project 1</a></li>
+              <li><a href="#">Project 2</a></li>
+              <li><a href="#">Project 3</a></li>
+            </ul>
+            
+          </li>
           <!-- <li><a href="#blog"></a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -56,7 +66,7 @@
       <h1>Hi, my name is Eliran Amzalag <br>
         I'm a Fullstack Developer.</h1>
       <!-- <p>We provide world class financial assistance</p> -->
-      <a href="#about" class="btn"><i class="fas fa-chevron-right"></i> Know More</a>
+      <a href="#about" class="btn"></i> Know More</a>
     </div>
   </header>
 
@@ -75,8 +85,8 @@
           </div>
         </div>
         <div class="column">
-          <div class="column-2 bg-light">
-            <h2>Blog Post One</h2>
+          <div class="column-2 bg-light away-animation">
+            <h2>Project One</h2>
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
@@ -101,17 +111,17 @@
 
 
     <!-- Each article is a reverse project -->
-    <article class="flex-columns flex-reverse ">
+    <article class="flex-columns flex-reverse "> 
       <div class="row project__row">
         <div class="column">
-          <div class="card">
+          <div class="card away-animation">
 
             <img src="img/myPost.png" alt="" />
           </div>
         </div>
         <div class="column">
-          <div class="column-2 bg-dark">
-            <h2>Blog Post One</h2>
+          <div class="column-2 bg-dark away-animation">
+            <h2>Project two</h2>
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
@@ -151,17 +161,21 @@
       <!-- <a href="#"><i class="fab fa-twitter fa-2x"></i></a> -->
       <a href="#"><i class="fab fa-github fa-2x"></i></a>
       <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-      <hr>
+      <br>
+      <br>
+        <hr>
+
+      
 
     </div>
-    <p>Copyright &copy; 2020 - EdgeLedger</p>
+    <p>Copyright &copy; 2020 - WantedHorizon</p>
   </footer>
 
 
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="js/lightbox.min.js"></script>
+  <!-- <script src="js/lightbox.min.js"></script> -->
   <script>
     const burger = document.getElementById('hamburger');
     // console.log(burger);
@@ -200,6 +214,9 @@
       }
     });
   </script>
+
+<script src="js/main.js"></script>
+
 </body>
 
 </html>
