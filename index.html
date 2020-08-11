@@ -27,7 +27,15 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#projects">
+                Projects</a> <i class="fas fa-angle-down"></i>
+              <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+              </ul>
+
+            </li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -48,13 +56,13 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">
-            Projects</a> <i class="fas fa-angle-down"></i>
+              Projects</a> <i class="fas fa-angle-down"></i>
             <ul>
               <li><a href="#">Project 1</a></li>
               <li><a href="#">Project 2</a></li>
               <li><a href="#">Project 3</a></li>
             </ul>
-            
+
           </li>
           <!-- <li><a href="#blog"></a></li> -->
           <li><a href="#contact">Contact</a></li>
@@ -75,74 +83,81 @@
 
   <section id="project" class="bg-img3">
     <div class="box">
-    <!-- Each article is a project -->
-    <article class="flex-columns  bg-transparent ">
-      <div class="row project__row ">
-        <div class="column">
-          <div class="card ">
+      <!-- Each article is a project -->
+      <article class="flex-columns  bg-transparent ">
+        <div class="row project__row ">
+          <div class="column">
+            <div class="card show-animation ">
 
-            <img src="img/myPost.png" alt="" />
+              <img src="img/myPost.png" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2  bg-light ">
+              <div class="show-animation">
+                <h2>Project One</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                  illum, animi earum ea amet sequi reiciendis sit corporis sunt
+                  iusto cupiditate odio maxime adipisci cumque eligendi nemo
+                  dolore id itaque?
+                </p>
+                <a href="#" class="btn btn-dark">
+                  <i class="fas fa-chevron"></i>
+                  See Live
+                </a>
+
+                <a href="#" class="btn btn-dark">
+                  <i class="fas fa-chevron"></i>
+                  Source Code
+                </a>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="column-2 bg-light away-animation">
-            <h2>Project One</h2>
+      </article>
+      <!-- end of project -->
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              illum, animi earum ea amet sequi reiciendis sit corporis sunt
-              iusto cupiditate odio maxime adipisci cumque eligendi nemo
-              dolore id itaque?
-            </p>
-            <a href="#" class="btn btn-dark">
-              <i class="fas fa-chevron"></i>
-              See Live
-            </a>
 
-            <a href="#" class="btn btn-dark">
-              <i class="fas fa-chevron"></i>
-              Source Code
-            </a>
+      <!-- Each article is a reverse project -->
+      <article class="flex-columns flex-reverse ">
+        <div class="row project__row">
+          <div class="column">
+            <div class="card show-animation ">
+
+              <img src="img/myPost.png" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2  bg-dark ">
+
+              <div class="show-animation">
+                <h2>Project two</h2>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                  illum, animi earum ea amet sequi reiciendis sit corporis sunt
+                  iusto cupiditate odio maxime adipisci cumque eligendi nemo
+                  dolore id itaque?
+                </p>
+                <a href="#" class="btn btn-light">
+                  <i class="fas fa-chevron"></i>
+                  See Live
+                </a>
+
+                <a href="#" class="btn btn-light">
+                  <i class="fas fa-chevron"></i>
+                  Source Code
+                </a>
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-    <!-- end of project -->
-
-
-    <!-- Each article is a reverse project -->
-    <article class="flex-columns flex-reverse "> 
-      <div class="row project__row">
-        <div class="column">
-          <div class="card away-animation">
-
-            <img src="img/myPost.png" alt="" />
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-2 bg-dark away-animation">
-            <h2>Project two</h2>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              illum, animi earum ea amet sequi reiciendis sit corporis sunt
-              iusto cupiditate odio maxime adipisci cumque eligendi nemo
-              dolore id itaque?
-            </p>
-            <a href="#" class="btn btn-light">
-              <i class="fas fa-chevron"></i>
-              See Live
-            </a>
-
-            <a href="#" class="btn btn-light">
-              <i class="fas fa-chevron"></i>
-              Source Code
-            </a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- end of project -->
+      </article>
+      <!-- end of project -->
 
 
 
@@ -165,9 +180,9 @@
       <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
       <br>
       <br>
-        <hr>
+      <hr>
 
-      
+
 
     </div>
     <p>Copyright &copy; 2020 - WantedHorizon</p>
@@ -217,7 +232,7 @@
     });
   </script>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('#project .card');
+const items = document.querySelectorAll('#project .show-animation');
 
 
 
@@ -17,7 +17,7 @@ const run = () => {
 
 
   items.forEach(item => {
-    // console.log(item)
+    // console.log(item);
     if (isInViewport(item)) {
       item.classList.add('show');
     }

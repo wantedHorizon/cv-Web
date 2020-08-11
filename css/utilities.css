@@ -51,7 +51,19 @@
 .bg-img3 { 
     /* background: url('img/bg3.jpg') no-repeat center center/cover !important; */
     background: url('https://files.123freevectors.com/wp-content/original/169733-shiny-abstract-pink-and-blue-background-vector-image.jpg') no-repeat center center/cover !important;
+    position: relative;
+    z-index: 0;
+}
 
+.bg-img3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 

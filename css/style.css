@@ -82,14 +82,24 @@ a {
     display: inline-block;
 }
 
+.menu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+
 /* Hide nested ul by default */
 
-#nav1 ul li ul {
+#nav1 ul li ul,
+.menu ul li ul {
     display: none;
     /* position: absolute; */
 }
 
-#nav1 ul li:hover ul {
+
+
+#nav1 ul li:hover ul,
+.menu ul li:hover ul {
     cursor: pointer;
     /* background: var(--primary-color); */
     color: #fff;
@@ -102,7 +112,8 @@ a {
 
 /* Nested dropdown show */
 
-#nav1 ul li:hover ul {
+#nav1 ul li:hover ul
+ {
     display: block;
     position: absolute;
     /* bottom: 0; */
@@ -112,8 +123,25 @@ a {
     box-shadow: 1px 1px black;
 }
 
+.menu ul li:hover ul
+{
+    margin: auto;
+    display: block;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+}
+.menu ul li:hover ul li {
+    display: block;
+    
+}
+
+.menu ul li ul li a {
+    color: var(--primary-color);
+}
+
+
 #nav1 ul li:hover ul li {
-    /* display: block; */
     background: var(--bg-navbar);
 }
 
@@ -246,6 +274,9 @@ a {
     
 }
 
+
+
+
 #project >.box {
     max-width: 1000px;
     margin: auto;
@@ -267,29 +298,28 @@ a {
     transition: all 0.4s ease-in-out;
     box-shadow: 1px 2px 3px black;
 
-    transform: translateX(-100px);
+    /* transform: translateX(-100px);
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; */
     transition: all 0.5s ease-in-out;
 
 }
 
-/* .away-animation {
-    transform: translateX(-100px);
+.show-animation, .flex-reverse .column-2 .show-animation {
+    transition:  0.5s ease-in-out;
+
+    transform: translateX(-150px);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s ease-in-out;
-
-} */
-
-
-.flex-reverse  .card {
-    transform: translateX(100px);
+}
+.flex-reverse  .show-animation, .column-2 .show-animation  {
+    transform: translateX(150px);
 
 }
 
 
-.card.show {
+
+#project .show-animation.show {
     transform: translateX(0) ;
     visibility: visible ;
     opacity: 1 ;
@@ -299,11 +329,11 @@ a {
 
 
 
-.card:hover {
+#project .card:hover {
     transform: scale(1.2) rotate(5deg);
 }
 
-.flex-reverse .card:hover {
+#project .flex-reverse .card:hover {
     transform: scale(1.2) rotate(-5deg);
 }
 
@@ -311,7 +341,10 @@ a {
     height: 100vh !important;
 }
 
-
+/* ABOUT */
+#about {
+    height: 100vh;
+}
 
 
 
@@ -340,47 +373,6 @@ a {
         margin: auto;
     }
 
-    /* Navbar */
-    /* .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: var(--bg-navbar);
-        padding: 4vh 0;
-        transition: 0.5s;
-        
-    }
-    #nav1 > ul >li {
-        display: block;
-        text-align: center;
-        border-top: 0.4px dashed gray;
-        padding: 10px 15px;
-        width: 90vw;
-    } */
-
-    /* #nav1 ul   {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #nav1 ul li:hover ul {
-        width: 100%;
-        position: relative;
-    }
-    #showcase {
-        max-height: 50vh;
-    } */
-
-    /* header */
-
-
-    /* .hero {
-        background: url('https://files.123freevectors.com/wp-content/original/169733-shiny-abstract-pink-and-blue-background-vector-image.jpg') no-repeat center center/cover;
-        position: relative;
-        color: var(--text-color-light);
-    }
-     */
     
     
     .hero .content h1 {

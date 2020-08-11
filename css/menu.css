@@ -136,16 +136,17 @@
     transition: opacity 0.4s ease;
   }
   
+  .menu-wrap .menu > div > div > ul  {
+    display: flex;
+    flex-direction: column;
+  }
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: var(--text-color-light);
     font-size: 2.2rem;
     padding: 0.5rem 1rem; 
     transition: color 0.2s ease;
-    /* background-color: var(--secondary-color); */
-    border-radius: 10px;
-    /* border: 1px solid var(--secondary-color); */
-
+    border-radius: 10px;  
     margin-bottom: 2rem;
 
   }
@@ -153,9 +154,17 @@
     transform: scale(1.1);
     background: var(--bg-color-light);
     color: var(--secondary-color);
-
+    
     box-shadow: 1px 1px  black;
 
+
+  }
+
+  .menu-wrap .menu > div > div > ul > li:hover ul li {
+
+    border-bottom: 1px solid black ;
+
+    padding: 1rem 2rem;
 
   }
 
@@ -166,5 +175,4 @@
     transition: color 0.4s ease;
   }
   
-  .menu-wrap .menu > div > div > ul > li > a:hover {
-  }
+  
