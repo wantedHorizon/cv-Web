@@ -44,6 +44,18 @@
     border: 1px solid #fff;
 }
 
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-img3 { 
+    /* background: url('img/bg3.jpg') no-repeat center center/cover !important; */
+    background: url('https://files.123freevectors.com/wp-content/original/169733-shiny-abstract-pink-and-blue-background-vector-image.jpg') no-repeat center center/cover !important;
+
+}
+
+
+
 /* Flex items */
 .flex-items {
     display: flex;
