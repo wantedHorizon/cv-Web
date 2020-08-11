@@ -94,7 +94,7 @@
           </div>
           <div class="column">
             <div class="column-2  bg-light ">
-              <div class="show-animation">
+              <div class="show-animation ">
                 <h2>Project One</h2>
 
                 <p>
@@ -194,23 +194,23 @@
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <!-- <script src="js/lightbox.min.js"></script> -->
   <script>
-    const burger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
     // console.log(burger);
     // const burger = document.getElementsByClassName("hamburger");
     let scrolled = false;
 
     window.onscroll = function () {
       if (window.pageYOffset > 100) {
-        burger.classList.add('bg-red');
+        navbar.classList.remove('top');
         if (!scrolled) {
-          burger.style.transform = 'translateY(-70px)';
+          navbar.style.transform = 'translateY(-70px)';
         }
         setTimeout(function () {
-          burger.style.transform = 'translateY(0)';
+          navbar.style.transform = 'translateY(0)';
           scrolled = true;
         }, 200);
       } else {
-        burger.classList.remove('bg-red');
+        navbar.classList.add('top');
         scrolled = false;
       }
     };

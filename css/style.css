@@ -42,7 +42,7 @@ a {
 /* Navbar */
 
 .navbar.top {
-    /* background: transparent; */
+    background: transparent;
 }
 
 .navbar .logo {
@@ -59,7 +59,7 @@ a {
 
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,6 +68,9 @@ a {
     transition: 0.5s;
     padding-left: 8rem;
 }
+
+
+    
 
 .navbar nav>ul>li>a:hover {
     border-bottom: var(--primary-color) 2px solid;
@@ -161,7 +164,8 @@ a {
     height: 100vh;
     position: relative;
     color: var(--text-color-light);
-    
+    overflow: hidden;
+
     
 }
 
@@ -195,12 +199,10 @@ a {
     }
 }
 
-
-
 .hero .content .btn {
     font-size: 1.8rem;
-    transform: translateX(1800px);
-
+    transform: translateX(500px);
+    
     animation: text var(--animate-speed) forwards ease-in;
     animation-delay: 0.7s;
 }
@@ -301,18 +303,18 @@ a {
     /* transform: translateX(-100px);
     opacity: 0;
     visibility: hidden; */
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
 
 }
 
-.show-animation, .flex-reverse .column-2 .show-animation {
+.show-animation {
     transition:  0.5s ease-in-out;
 
     transform: translateX(-150px);
     opacity: 0;
     visibility: hidden;
 }
-.flex-reverse  .show-animation, .column-2 .show-animation  {
+.flex-reverse  .show-animation {
     transform: translateX(150px);
 
 }
@@ -323,6 +325,7 @@ a {
     transform: translateX(0) ;
     visibility: visible ;
     opacity: 1 ;
+    background: transparent;
 }
 
 
@@ -343,12 +346,21 @@ a {
 
 /* ABOUT */
 #about {
-    height: 100vh;
+    height: 10vh;
+    font-size: 2rem;
+}
+
+/* contact */
+#contact {
+    height: 10vh;
+    font-size: 2rem;
 }
 
 
 
 @media(max-width: 768px) {
+
+  
 
     .flex-items {
         flex-direction: column;
@@ -362,15 +374,19 @@ a {
     #nav1{
         display: none;
     }
-
+   
     .navbar {
         z-index: 3;
+        background:  black ;
+        
+       
     }
 
    
     .logo {
         display: block;
         margin: auto;
+        
     }
 
     
@@ -401,7 +417,17 @@ a {
     }
     
   
+    .show-animation {
+        transition:  0.5s ease-in-out;
     
+        transform: translateX(20px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .flex-reverse  .show-animation {
+        transform: translateX(20px);
+    
+    }
 
     
 
@@ -419,7 +445,7 @@ a {
     
     .hero .content p {
         font-size: 2.3rem;
-        max-width: 600px;
+        /* max-width: 600px; */
         margin: 20px 0 30px;
     }
     
